@@ -21,17 +21,6 @@ public class Main {
     }
     public static void ____() {System.out.println("------------------");}
 
-    public static void ex1(int seq) {
-        for (int i=1; i<=seq; ++i) {
-            if ( (i % 5 == 0) || (i % 7 == 0) ) {
-                if (i % 5 != 0) {
-                    System.out.println("buzz");
-                } else if (i % 7 != 0) {
-                    System.out.println("fizz");
-                } else System.out.println("fizzbuzz");
-            } else System.out.println(i);
-        }
-    }
     public static List<String> ex1_p(int bound) {
         List<String> result = new ArrayList<>();
 
