@@ -1,6 +1,9 @@
 package org.example;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,12 +37,12 @@ public class Main {
             } else result.add(String.valueOf(i));
         }
         return result;
+
     }
 
     public static StringBuilder ex2(String text) {
         StringBuilder text_ = new StringBuilder();
         for (int i = text.length()-1; i>=0; --i) {
-            //System.out.print(text.charAt(i) );
             text_.append(text.charAt(i));
         }
         return text_;
@@ -67,7 +70,7 @@ public class Main {
 
     public static boolean ex5 (String text) {
         String text_ = new StringBuilder(text).reverse().toString();
-        if (text.equals(text_)) {
+        if (text_.equals(text)) {
             return true;
         }
         return false;
